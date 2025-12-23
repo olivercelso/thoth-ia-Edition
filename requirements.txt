@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+sqlalchemy
+chromadb
+langchain
+langchain-openai
+pandas
+openpyxl
+pypdf
+slowapi
+python-dotenv
