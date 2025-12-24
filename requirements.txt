@@ -10,3 +10,4 @@ openpyxl
 pypdf
 slowapi
 python-dotenv
+pysqlite3-binary
