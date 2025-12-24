@@ -11,3 +11,7 @@ pypdf
 slowapi
 python-dotenv
 pysqlite3-binary
+pydantic-settings
+streamlit
+tiktoken
+langchain-communityS
