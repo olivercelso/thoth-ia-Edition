@@ -1,13 +1,14 @@
 from pydantic_settings import BaseSettings
-from typing import List
+from typing import Optional
 
 class Settings(BaseSettings):
-    openai_api_key: str
-    admin_api_key: str
-    allowed_origins: List[str] = ["http://localhost:8000"]
-    default_llm: str = "gpt-4o-mini"
-    vision_llm: str = "gpt-4o"
-
+    # Alteramos de 'str' para 'Optional[str] = None'
+    # Isso impede o erro de validação se a chave não estiver no ambiente do sistema
+    openai_api_key: Optional[str] = None
+    
+    # Outras configurações (se houver)
+    model_name: str = "gpt-4o-mini"
+    
     class Config:
         env_file = ".env"
 
